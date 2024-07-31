@@ -1,0 +1,159 @@
+/* Global styles */
+
+body {
+  background-color: #f9f9f9;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 110vh;
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  width: 300px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #666;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+a {
+  color: #337ab7;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav li {
+  margin-right: 20px;
+  margin-left: 0;
+}
+
+.nav a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #cccccc;
+}
+
+/* Media queries for responsiveness */
+
+/* Small screens (max-width: 576px) */
+@media (max-width: 576px) {
+ .container {
+    width: 90%;
+    padding: 20px;
+  }
+ .nav {
+    padding: 5px;
+  }
+ .nav li {
+    margin-right: 10px;
+  }
+}
+
+/* Medium screens (max-width: 768px) */
+@media (max-width: 768px) {
+ .container {
+    width: 80%;
+    padding: 25px;
+  }
+ .nav {
+    padding: 10px;
+  }
+ .nav li {
+    margin-right: 15px;
+  }
+}
+
+/* Large screens (min-width: 992px) */
+@media (min-width: 992px) {
+ .container {
+    width: 60%;
+    padding: 30px;
+  }
+ .nav {
+    padding: 15px;
+  }
+ .nav li {
+    margin-right: 25px;
+  }
+}
+
+/* Extra large screens (min-width: 1200px) */
+@media (min-width: 1200px) {
+ .container {
+    width: 50%;
+    padding: 35px;
+  }
+ .nav {
+    padding: 20px;
+  }
+ .nav li {
+    margin-right: 30px;
+  }
+}
